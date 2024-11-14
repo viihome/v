@@ -17,12 +17,12 @@ SPAM_CHATS = []
 async def tag_all_users(_, message):
     if message.chat.id in SPAM_CHATS:
         return await message.reply_text(
-            "tagging process is already running if you want to stop so use /cancel"
+            "proses tagall sudah berjalan jika Anda ingin menghentikannya jadi gunakan /cancel"
         )
     replied = message.reply_to_message
     if len(message.command) < 2 and not replied:
         await message.reply_text(
-            "** give some text to tag all, like »** `@all Hi Friends`"
+            "** berikan beberapa teks untuk menandai semuanya, seperti »** `@all Hai Teman`"
         )
         return
     if replied:
