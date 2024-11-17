@@ -8,4 +8,5 @@ MukeshAPI
 nekos.py
 telegraph
 uuid
-git+https://github.com/Vooyage21/apix@main
+#git+https://github.com/Vooyage21/apix@main
+TheApi
